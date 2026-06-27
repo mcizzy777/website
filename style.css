@@ -1,669 +1,779 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-*
-{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+/*==============================
+  RESET
+==============================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body
-{
-	font-family: 'Poppins', sans-serif;
+html{
+    scroll-behavior:smooth;
 }
 
-h1
-{
-	font-size: 2.5rem;
-	font-weight: 700;
-	color: rgb(35, 35, 85);
+body{
+    font-family:'Poppins',sans-serif;
+    background:#eef2ff;
+    color:#222;
+    overflow-x:hidden;
 }
 
-span
-{
-	font-size: .9rem;
+/*==============================
+  CONTAINER
+==============================*/
+
+.container{
+    width:100%;
+    max-width:1600px;
+    margin:auto;
+    padding:35px 60px;
 }
+
+/*==============================
+  HEADER
+==============================*/
 
-h6
-{
-	font-size: 1.1rem;
-	color: rgb(49, 56, 153);
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
 }
 
+.header-left,
+.header-right{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
 
-/*------------- Navigation style start ------------*/
-nav
-{
-	position: fixed;
-	width: 100%;
-	background-color: #3761bd;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 1vw 8vw;
-	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
-	z-index: 1;
+.circle-btn{
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:#fff;
+    font-size:20px;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
 }
 
-nav .logo
-{
-	width: 75px;
-	cursor: pointer;
+.circle-btn:hover{
+    transform:translateY(-4px);
 }
 
-nav .navigation
-{
-	display: flex;
+.navbar{
+    display:flex;
+    gap:45px;
 }
 
-#menu-btn
-{
-	width: 30px;
-	height: 30px;
-	display: none;
+.navbar a{
+    text-decoration:none;
+    color:#555;
+    font-size:16px;
+    font-weight:500;
+    transition:.3s;
+    position:relative;
 }
 
-#menu-close
-{
-	display: none;
+.navbar a:hover{
+    color:#5b66ff;
 }
 
-nav .navigation ul
-{
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
+.navbar .active{
+    color:#5b66ff;
 }
 
-nav .navigation ul li
-{
-	list-style: none;
-	margin-left: 30px;
+.navbar .active::after{
+    content:"";
+    position:absolute;
+    bottom:-8px;
+    left:0;
+    width:100%;
+    height:3px;
+    background:#5b66ff;
+    border-radius:20px;
 }
 
-nav .navigation ul li a
-{
-	text-decoration: none;
-	color: rgb(21, 21, 100);
-	font-size: 16px;
-	font-weight: 500;
-	transition: 0.3s ease;
+.login-btn{
+    border:none;
+    outline:none;
+    background:#fff;
+    padding:12px 28px;
+    border-radius:50px;
+    cursor:pointer;
+    font-weight:600;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 
-nav .navigation ul li a.active,
-nav .navigation ul li a:hover
-{
-	color: #FDC93B;
+.signup-btn{
+    border:none;
+    outline:none;
+    background:#5b66ff;
+    color:#fff;
+    padding:12px 30px;
+    border-radius:50px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
 
+.signup-btn:hover{
+    background:#4752eb;
 }
-/*------------- Navigation style end ------------*/
 
+/*==============================
+  HERO
+==============================*/
 
+.hero{
+    position:relative;
+    height:500px;
+    border-radius:35px;
+    overflow:hidden;
+    background:linear-gradient(135deg,#5367ff,#8ea6ff);
+    box-shadow:0 30px 60px rgba(0,0,0,.12);
+    margin-bottom:35px;
+}
 
-/*------------- Hero section styling start --------------*/
-#home
-{
-	background-image: linear-gradient(rgba(114, 167, 241, 0.3), rgba(4, 36, 100, 0.7)), url("img/download\ \(2\).jpg");
-	width: 100%;
-	height: 100vh;
-	background-size: cover;
-	background-position: center center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	padding-top: 40px;
+.hero-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:100%;
+    padding:0 80px;
 }
 
-#home h2
-{
-	color: #fff;
-	font-size: 2.2rem;
-	letter-spacing: 1px;
+.hero-text{
+    width:40%;
+    color:#fff;
 }
 
-#home p
-{
-	width: 50%;
-	color: #fff;
-	font-size: 0.9rem;
-	line-height: 25px;
+.logo{
+    width:65px;
+    margin-bottom:25px;
 }
 
-#home .btn
-{
-	margin-top: 30px;
+.hero-text h1{
+    font-size:76px;
+    font-weight:700;
+    margin-bottom:15px;
 }
 
-#home a
-{
-	text-decoration: none;
-	font-size: 0.9rem;
-	padding: 13px 35px;
-	background-color: #fff;
-	font-weight: 600;
-	border-radius: 5px;
+.hero-text p{
+    font-size:17px;
+    line-height:1.8;
+    color:rgba(255,255,255,.9);
+    margin-bottom:35px;
 }
 
-#home a.blue
-{
-	color: #fff;
-	background: rgb(21, 21, 100);
-	transition: 0.3s ease;
+.read-more{
+    display:inline-block;
+    padding:15px 34px;
+    background:#fff;
+    color:#5b66ff;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
 }
 
-#home a.blue:hover
-{
-	color: rgb(21, 21, 100);
-	background: #fff;
+.read-more:hover{
+    transform:translateY(-4px);
 }
 
-#home a.yellow
-{
-	color: #fff;
-	background: #fdc938;
-	transition: 0.3s ease;
+.dots{
+    display:flex;
+    gap:12px;
+    margin-top:35px;
 }
 
-#home a.yellow:hover
-{
-	color: rgb(21, 21, 100);
-	background: #fff;
+.dots span{
+    width:12px;
+    height:12px;
+    background:rgba(255,255,255,.4);
+    border-radius:50%;
 }
-/*------------- Hero section styling end --------------*/
 
+.dots .active{
+    width:38px;
+    border-radius:20px;
+    background:#fff;
+}
 
-/*------------- Features section styling start -------------*/
-#features
-{
-	padding: 5vw 8vw 0 8vw;
-	text-align: center;
+.hero-image{
+    width:45%;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+    height:100%;
 }
 
-#features .fea-base
-{
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-	grid-gap: 1rem;
-	margin-top: 50px;
+.hero-image img{
+    width:100%;
+    max-width:520px;
+    object-fit:contain;
 }
 
-#features .fea-box
-{
-	background: #edf1f2;
-	text-align: start;
-	padding: 1.2rem;
-	border-radius: 6px;
+.arrow{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:58px;
+    height:58px;
+    border:none;
+    border-radius:50%;
+    background:#fff;
+    color:#5b66ff;
+    font-size:30px;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
 }
 
-#features .fea-box i
-{
-	font-size: 2.3rem;
-	color: rgb(44, 44, 80);
+.arrow:hover{
+    transform:translateY(-50%) scale(1.08);
 }
 
-#features .fea-box h3
-{
-	font-size: 1.2rem;
-	font-weight: 600;
-	color: rgb(46, 46, 59);
-	padding: 13px 0 7px 0;
+.left{
+    left:25px;
 }
 
-#features .fea-box p
-{
-	font-size: 1rem;
-	font-weight: 400;
-	color: rgb(70, 70, 87);
+.right{
+    right:25px;
 }
-/*------------- Features section styling end -------------*/
+/*==================================
+BOTTOM SECTION
+==================================*/
 
+.bottom{
+    display:grid;
+    grid-template-columns:1.2fr 1fr .9fr;
+    gap:25px;
+    margin-bottom:40px;
+}
 
-/*------------- Courses section styling start ------------*/
-#course
-{
-	padding: 8vw 8vw 8vw 8vw;
-	text-align: center;
+.card{
+    background:#fff;
+    border-radius:28px;
+    padding:25px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
 }
+
+/*==================================
+ARTWORK
+==================================*/
 
-#course .course-box
-{
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-	grid-gap: 1rem;
-	margin-top: 50px;
+.title{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
 }
 
-#course .courses
-{
-	text-align: start;
-	background: #edf1f2;
-	height: 100%;
-	position: relative;
+.title h2{
+    font-size:24px;
 }
 
-#course .courses img
-{
-	width: 100%;
-	height: 60%;
-	background-size: cover;
-	background-position: center;
+.title i{
+    font-size:26px;
+    color:#5b66ff;
 }
 
-#course .courses .details
-{
-	padding: 15px 15px 0 15px;
+.art-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
 }
 
-#course .courses .details i
-{
-	color: #fdc93b;
-	font-size: .9rem;
+.art-card{
+    background:#f6f7ff;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.3s;
 }
 
-#course .courses .cost
-{
-	background-color: rgb(74, 74, 136);
-	color: #fff;
-	line-height: 70px;
-	width: 70px;
-	height: 70px;
-	text-align: center;
-	border-radius: 50%;
-	position: absolute;
-	right: 15px;
-	bottom: 100px;
+.art-card:hover{
+    transform:translateY(-8px);
 }
-/*------------- Courses section styling end ------------*/
 
+.art-card img{
+    width:100%;
+    height:210px;
+    object-fit:cover;
+    display:block;
+}
 
-/*------------- Registration section styling start ----------*/
-#registration
-{
-	padding: 6vw 8vw 6vw 8vw;
-	background-image: linear-gradient(rgba(99,112,168,0.5), rgba(81,91,233,0.5)),url("img/sunday.jpg");
-	width: 100%;
-	height: 100%;
-	background-size: cover;
-	background-position: center;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+.art-card p{
+    padding:15px;
+    font-weight:600;
+    text-align:center;
 }
 
-#registration .reminder, #registration .reminder h1
-{
-	color: #fff;
+.view-btn{
+    width:100%;
+    margin-top:20px;
+    border:none;
+    padding:15px;
+    border-radius:50px;
+    background:#5b66ff;
+    color:#fff;
+    font-size:15px;
+    cursor:pointer;
+    transition:.3s;
 }
 
-#registration .reminder .time
-{
-	display: flex;
-	margin-top: 40px;
+.view-btn:hover{
+    background:#4752eb;
 }
+
+/*==================================
+RECENT SEARCH
+==================================*/
 
-#registration .reminder .time .date
-{
-	text-align: center;
-	padding: 13px 33px;
-	background: rgba(255, 255, 255, 0.25);
-	backdrop-filter: blur(4px);
-	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-	border-radius: 10px;
-	margin: 0 5px 10px 5px;
-	border: 1px solid rgba(255, 255, 255, 0.18);
-	font-size: 1.1rem;
-	font-weight: 600;
+.recent h2{
+    margin-bottom:22px;
 }
 
-#registration .form
-{
-	background: #fff;
-	border-radius: 8px;
-	display: flex;
-	flex-direction: column;
-	padding: 40px;
-	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+.search-list{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
 }
 
-#registration .form input
-{
-	margin: 15px 0;
-	padding: 15px 10px;
-	border: 1px solid rgb(84, 40, 241);
-	outline: none;
+.search-item{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:15px 18px;
+    border-radius:18px;
+    background:#f7f8ff;
+    transition:.3s;
+    cursor:pointer;
 }
 
-#registration .form input::placeholder
-{
-	color: #413c3c;
-	font-weight: 500;
-	font-size: 0.9rem;
+.search-item:hover{
+    background:#edf0ff;
+    transform:translateX(8px);
 }
 
-#registration .form .btn
-{
-	margin-top: 20px;
+.search-item i{
+    color:#5b66ff;
+    font-size:20px;
 }
 
-#registration .form a.yellow
-{
-	text-decoration: none;
-	font-size: 0.9rem;
-	padding: 13px 35px;
-	background-color: #fff;
-	font-weight: 600;
-	border-radius: 5px;
-	color: #fff;
-	background: #fdc938;
-	transition: 0.3s ease;
+.search-item span{
+    font-weight:500;
 }
 
-#registration .form a.yellow:hover
-{
-	color: rgb(21, 21, 100);
-	background: #fff;
+/*==================================
+SIDEBAR
+==================================*/
+
+.sidebar{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
 }
-/*------------- Registration section styling end ----------*/
 
+.mini-icons{
+    display:flex;
+    gap:18px;
+}
 
+.mini-card{
+    flex:1;
+    background:#fff;
+    border-radius:24px;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    position:relative;
+}
 
-/*------------- Experts section styling starts ----------*/
-#experts
-{
-	padding: 8vw 8vw 8vw 8vw;
-	text-align: center;
+.mini-card button{
+    position:absolute;
+    top:10px;
+    right:10px;
+    width:30px;
+    height:30px;
+    border:none;
+    border-radius:50%;
+    background:#f2f3ff;
+    cursor:pointer;
 }
 
-#experts .expert-box
-{
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-	grid-gap: 1rem;
-	margin-top: 50px;
+.mini-card img{
+    width:100%;
+    max-height:120px;
+    object-fit:contain;
 }
+/*==================================
+INFO CARDS
+==================================*/
 
-#experts .expert-box .profile
-{
-	background: #fafaf1;
-	padding: 30px 10px;
-	box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+.info{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
 }
 
-#experts .expert-box .profile:hover
-{
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+.info-card{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    background:#fff;
+    padding:18px;
+    border-radius:22px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.35s ease;
+    cursor:pointer;
 }
-#experts .expert-box .profile img{
-	width:100px;
-	height:100px;
+
+.info-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
 }
-.pro-links
-{
-	margin-top: 10px;
+
+.info-card img{
+    width:65px;
+    height:65px;
+    object-fit:contain;
+    border-radius:16px;
+    background:#f6f7ff;
+    padding:10px;
 }
 
-.pro-links i
-{
-	padding: 10px 13px;
-	border: 1px solid rgb(21, 21, 100);
-	cursor: pointer;
-	transition: 0.3s ease;
+.info-card h3{
+    font-size:18px;
+    font-weight:600;
+    color:#222;
+    margin-bottom:6px;
 }
 
-.pro-links i:hover
-{
-	background: rgb(21, 21, 100);
-	color: #fff;
+.info-card p{
+    color:#666;
+    font-size:14px;
+    line-height:1.6;
 }
-/*------------- Experts section styling ends ----------*/
 
+/*==================================
+GENERAL ANIMATIONS
+==================================*/
 
+.card,
+.info-card,
+.mini-card,
+.art-card{
+    transition:.35s ease;
+}
 
-/*------------- Footer section styling starts ------------*/
-footer
-{
-	padding: 8vw;
-	background-color: #101c32;
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-	flex-wrap: wrap;
+.card:hover{
+    transform:translateY(-5px);
 }
 
-footer .footer-col
-{
-	padding-bottom: 40px;
+.circle-btn:hover,
+.login-btn:hover,
+.signup-btn:hover,
+.view-btn:hover{
+    transform:translateY(-3px);
 }
+
+/*==================================
+SCROLLBAR
+==================================*/
 
-footer h3
-{
-	color: rgb(241, 240, 245);
-	font-weight: 600;
-	padding-bottom: 20px;
+::-webkit-scrollbar{
+    width:10px;
 }
 
-footer li
-{
-	list-style: none;
-	color: #7b838a;
-	padding: 10px 0;
-	font-size: 15px;
-	cursor: pointer;
-	transition: 0.3s ease;
+::-webkit-scrollbar-track{
+    background:#edf1ff;
 }
 
-footer li:hover
-{
-	color: rgb(241, 240, 245);
+::-webkit-scrollbar-thumb{
+    background:#5b66ff;
+    border-radius:20px;
 }
 
-footer p
-{
-	color: #7b838a;
+::-webkit-scrollbar-thumb:hover{
+    background:#4954ef;
 }
+
+/*==================================
+RESPONSIVE
+==================================*/
+
+@media(max-width:1200px){
+
+    .container{
+        padding:30px;
+    }
+
+    .hero-content{
+        padding:40px;
+    }
 
-footer .subscribe
-{
-	margin-top: 20px;
+    .hero-text h1{
+        font-size:60px;
+    }
+
+    .bottom{
+        grid-template-columns:1fr;
+    }
+
+    .sidebar{
+        flex-direction:row;
+        gap:25px;
+    }
+
+    .mini-icons{
+        flex-direction:column;
+        width:180px;
+    }
+
+    .info{
+        flex:1;
+    }
+
 }
+
+@media(max-width:900px){
+
+    .header{
+        flex-direction:column;
+        gap:25px;
+    }
+
+    .navbar{
+        gap:20px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
 
-footer input
-{
-	width: 220px;
-	padding: 15px 12px;
-	background: #334F6C;
-	border: none;
-	outline: none;
-	color: #fff;
+    .hero{
+        height:auto;
+        padding:50px 30px;
+    }
+
+    .hero-content{
+        flex-direction:column;
+        text-align:center;
+        gap:35px;
+    }
+
+    .hero-text{
+        width:100%;
+    }
+
+    .hero-image{
+        width:100%;
+    }
+
+    .hero-image img{
+        max-width:360px;
+    }
+
+    .arrow{
+        display:none;
+    }
+
+    .art-grid{
+        grid-template-columns:1fr;
+    }
+
+    .sidebar{
+        flex-direction:column;
+    }
+
 }
+
+@media(max-width:600px){
+
+    .container{
+        padding:20px;
+    }
+
+    .hero-text h1{
+        font-size:46px;
+    }
 
-footer .subscribe a
-{
-	text-decoration: none;
-	font-size: 0.9rem;
-	padding: 12px 15px;
-	background-color: #fff;
-	font-weight: 600;
+    .hero-text p{
+        font-size:15px;
+    }
+
+    .login-btn,
+    .signup-btn{
+        padding:10px 18px;
+    }
+
+    .mini-icons{
+        width:100%;
+        flex-direction:row;
+    }
+
 }
+/*==================================
+PART 2D - FINAL VISUAL POLISH
+==================================*/
+
+/* Floating background glow */
 
-footer .subscribe a.yellow
-{
-	color: #fff;
-	background: #fdc93b;
-	transition: 0.3s ease;
+body::before{
+    content:"";
+    position:fixed;
+    width:550px;
+    height:550px;
+    background:radial-gradient(circle,#7d8fff55 0%,transparent 70%);
+    top:-220px;
+    right:-120px;
+    z-index:-2;
+    pointer-events:none;
 }
 
-footer .subscribe a.yellow:hover
-{
-	color: rgb(21, 21, 100);
-	background: #fff;
+body::after{
+    content:"";
+    position:fixed;
+    width:500px;
+    height:500px;
+    background:radial-gradient(circle,#5c6dff33 0%,transparent 70%);
+    bottom:-220px;
+    left:-150px;
+    z-index:-2;
+    pointer-events:none;
 }
 
-footer .copyright
-{
-	margin-top: 20px;
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
+/* Hero decorative circles */
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:450px;
+    height:450px;
+    border-radius:50%;
+    background:rgba(255,255,255,.08);
+    right:-140px;
+    top:-130px;
 }
 
-footer .copyright p, footer .copyright p > a
-{
-	color: #fff;
-	text-decoration: none;
+.hero::after{
+    content:"";
+    position:absolute;
+    width:260px;
+    height:260px;
+    border-radius:50%;
+    background:rgba(255,255,255,.05);
+    left:-80px;
+    bottom:-80px;
 }
+
+/* Glass effect */
 
-footer .copyright .pro-links
-{
-	margin-top: 0px;
+.card,
+.info-card,
+.mini-card,
+.circle-btn,
+.login-btn{
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
 }
 
-footer .copyright .pro-links i
-{
-	background-color: #5f7185;
-	color: #fff;
+/* Better shadows */
+
+.hero{
+    box-shadow:
+    0 35px 70px rgba(70,90,255,.25);
 }
 
-footer .copyright .pro-links i:hover
-{
-	background: #fdc93b;
-	color: #2c2c2c;
+.card{
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.08),
+    0 4px 10px rgba(255,255,255,.4) inset;
 }
-/*------------- Footer section styling ends ------------*/
 
+.info-card{
+    box-shadow:
+    0 12px 30px rgba(0,0,0,.08);
+}
 
+.mini-card{
+    box-shadow:
+    0 12px 30px rgba(0,0,0,.08);
+}
 
-/*---------------------------------------------------------*/
-/*-------------------- Ipad screen styling ----------------*/
-/*---------------------------------------------------------*/
-@media screen and (max-width: 789px)
-{
-	nav
-	{
-		padding: 15px 20px;
-	}
+/* Hover effects */
 
-	nav img
-	{
-		width: 130px;
-	}
+.art-card img{
+    transition:.5s;
+}
 
-	#menu-btn
-	{
-		display: initial;
-	}
+.art-card:hover img{
+    transform:scale(1.08);
+}
 
-	#menu-close
-	{
-		display: initial;
-		font-size: 1.6rem;
-		color: #fff;
-		padding: 30px 0 20px 20px;
-	}
+.info-card:hover img{
+    transform:rotate(-6deg) scale(1.08);
+    transition:.35s;
+}
 
-	nav .navigation ul
-	{
-		position: absolute;
-		top: 0;
-		right: -220px;
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		align-items: flex-start;
-		width: 220px;
-		height: 100vh;
-		background: rgba(17, 20, 104, 0.45);
-		backdrop-filter: blur(4.5px);
-		border: 1px solid rgba(255, 255, 255, 0.18);
-		transition: 0.3s ease-in;
-	}
+.mini-card:hover img{
+    transform:translateY(-6px);
+    transition:.35s;
+}
 
-	nav .navigation ul.active
-	{
-		right: 0;
-	}
+.circle-btn:hover{
+    background:#5b66ff;
+    color:white;
+}
 
-	nav .navigation ul li
-	{
-		padding: 20px 0 20px 40px;
-		margin-left: 0;
-	}
+.login-btn:hover{
+    background:#5b66ff;
+    color:white;
+}
 
-	nav .navigation ul li a
-	{
-		color: #fff;
-	}
+/* Smooth page animation */
 
-	#home
-	{
-		padding: 0px;
-	}
+.header,
+.hero,
+.card,
+.sidebar{
+    animation:fadeUp .8s ease both;
+}
 
-	#home p
-	{
-		width: 90%;
-	}
+.hero{
+    animation-delay:.2s;
+}
 
-	#features
-	{
-		padding: 8vw 4vw 0 4vw;
-	}
+.bottom{
+    animation:fadeUp 1s ease both;
+    animation-delay:.3s;
+}
 
-	#course
-	{
-		padding: 8vw 4vw 8vw 4vw;
-	}
+@keyframes fadeUp{
 
-	#registration
-	{
-		padding: 6vw 4vw 6vw 4vw;
-		gap: 2.2rem;
-	}
+    from{
 
-	#registration .reminder .time
-	{
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		margin-top: 40px;
-	}
+        opacity:0;
+        transform:translateY(35px);
 
-	#experts
-	{
-		padding: 8vw 4vw 6vw 4vw;
-	}
+    }
 
-	footer .copyright .pro-links
-	{
-		margin-top: 20px;
-	}
-}
+    to{
 
+        opacity:1;
+        transform:translateY(0);
 
-@media screen and (max-width: 475px)
-{
-	#registration
-	{
-		flex-direction: column;
-	}
+    }
 
-	.reminder p, .reminder h1
-	{
-		text-align: center;
-	}
+}
 
-	.reminder h1
-	{
-		font-size: 1.8rem;
-	}
+/* Selection */
 
-	#registration .reminder .time
-	{
-		justify-content: space-evenly;
-		margin-top: 20px;
-	}
+::selection{
+    background:#5b66ff;
+    color:white;
 }
