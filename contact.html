@@ -1,33 +1,341 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Contact</title>
-  <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact | NatureQuest</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* CONTACT PAGE */
+
+.contact-container{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:40px;
+
+margin:60px 0;
+
+}
+
+.contact-info{
+
+background:#eef5e5;
+
+padding:40px;
+
+border-radius:35px;
+
+border:4px dashed #9ab97f;
+
+}
+
+.contact-info h2{
+
+font-family:'Patrick Hand',cursive;
+
+font-size:45px;
+
+margin-bottom:20px;
+
+color:#4d6943;
+
+}
+
+.contact-info p{
+
+line-height:1.8;
+
+margin-bottom:18px;
+
+color:#5e7157;
+
+}
+
+.contact-form{
+
+background:#fffef8;
+
+padding:40px;
+
+border-radius:35px;
+
+border:4px dashed #b7cda3;
+
+}
+
+.contact-form h2{
+
+font-family:'Patrick Hand',cursive;
+
+font-size:45px;
+
+margin-bottom:25px;
+
+color:#4d6943;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+width:100%;
+
+padding:15px;
+
+margin-bottom:20px;
+
+border:none;
+
+outline:none;
+
+border-radius:20px;
+
+background:#f7f7f0;
+
+font-family:Poppins;
+
+font-size:16px;
+
+}
+
+.contact-form textarea{
+
+height:180px;
+
+resize:none;
+
+}
+
+.contact-form button{
+
+background:#e7b84c;
+
+color:white;
+
+border:none;
+
+padding:15px 35px;
+
+border-radius:999px;
+
+font-size:17px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.contact-form button:hover{
+
+background:#98b27b;
+
+}
+
+@media(max-width:900px){
+
+.contact-container{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+
 </head>
+
 <body>
 
+<div class="container">
+
+<!-- HEADER -->
+
 <header>
-  <div class="logo">🌿 Nature Explorer</div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="wildlife.html">Wildlife</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="blog.html">Blog</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+
+<div class="logo">
+
+<div class="logo-box"></div>
+
+<div>
+
+<h1>NatureQuest</h1>
+
+<p>Explore • Learn • Protect</p>
+
+</div>
+
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="wildlife.html">Wildlife</a>
+<a href="gallery.html">Gallery</a>
+<a href="blog.html">Blog</a>
+<a href="about.html">About</a>
+<a href="contact.html" class="active">Contact</a>
+
+</nav>
+
 </header>
 
-<section class="page-title">
-  <h1>Contact</h1>
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h2>Get In Touch</h2>
+
+<p>
+
+Have questions or suggestions?
+
+We'd love to hear from you!
+
+Let's work together to protect wildlife
+
+and our beautiful planet.
+
+</p>
+
+</div>
+
+<div class="hero-image">
+
+<img src="images/contact-banner.jpg" alt="Contact">
+
+</div>
+
 </section>
 
-<section>
-  <p>Email: nature@email.com</p>
-  <p>Phone: +63 900 000 0000</p>
+<!-- CONTACT -->
+
+<div class="contact-container">
+
+<div class="contact-info">
+
+<h2>Contact Information</h2>
+
+<p>📍 Philippines</p>
+
+<p>📧 naturequest@email.com</p>
+
+<p>📞 +63 912 345 6789</p>
+
+<p>
+
+🌿 Follow NatureQuest for more wildlife,
+
+nature photography, and conservation tips.
+
+</p>
+
+<br>
+
+<h2>Office Hours</h2>
+
+<p>Monday - Friday</p>
+
+<p>8:00 AM - 5:00 PM</p>
+
+</div>
+
+<div class="contact-form">
+
+<h2>Send a Message</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<input type="text" placeholder="Subject">
+
+<textarea placeholder="Write your message..."></textarea>
+
+<button type="submit">
+
+Send Message
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<!-- QUOTE -->
+
+<section class="quote">
+
+<h2>
+
+🌎 Together We Can Protect Nature
+
+</h2>
+
+<p>
+
+Every voice matters.
+
+Every action counts.
+
+Let's build a greener future together.
+
+</p>
+
 </section>
 
-<footer>© 2026 Contact</footer>
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-left">
+
+<h3>NatureQuest</h3>
+
+<p>
+
+Explore • Learn • Protect
+
+</p>
+
+</div>
+
+<div class="footer-links">
+
+<a href="index.html">Home</a>
+
+<a href="wildlife.html">Wildlife</a>
+
+<a href="gallery.html">Gallery</a>
+
+<a href="blog.html">Blog</a>
+
+</div>
+
+</footer>
+
+</div>
 
 </body>
+
 </html>
