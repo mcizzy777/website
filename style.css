@@ -714,4 +714,334 @@ justify-content:center;
 }
 
 }
-    
+    /* ===========================
+   CUTE SCRAPBOOK UPGRADE
+=========================== */
+
+body{
+
+background:
+radial-gradient(circle at top left,#fef8e9 0%,transparent 18%),
+radial-gradient(circle at bottom right,#eef8e7 0%,transparent 20%),
+#f8f7ef;
+
+}
+
+/* Floating Decorations */
+
+.container{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.container::before{
+
+content:"🌿";
+
+position:absolute;
+
+top:80px;
+
+left:-10px;
+
+font-size:70px;
+
+opacity:.18;
+
+transform:rotate(-15deg);
+
+}
+
+.container::after{
+
+content:"🍃";
+
+position:absolute;
+
+right:10px;
+
+top:350px;
+
+font-size:65px;
+
+opacity:.15;
+
+transform:rotate(20deg);
+
+}
+
+/* Cute Paper Cards */
+
+.card,
+.hero-text,
+.fact-box,
+.protect-text,
+.contact-form,
+.contact-info{
+
+position:relative;
+
+background:#fffef8;
+
+box-shadow:
+
+0 12px 25px rgba(0,0,0,.08),
+
+0 4px 0 #d9e6cb;
+
+}
+
+/* Washi Tape */
+
+.card::before{
+
+content:"";
+
+width:70px;
+
+height:18px;
+
+background:#f8e8a7;
+
+position:absolute;
+
+top:-10px;
+
+left:50%;
+
+transform:translateX(-50%) rotate(-3deg);
+
+border-radius:6px;
+
+opacity:.8;
+
+}
+
+/* Image Hover */
+
+.card img,
+.hero-image img,
+.fact-image img,
+.protect-image img{
+
+transition:.4s;
+
+}
+
+.card:hover img{
+
+transform:scale(1.05);
+
+}
+
+/* Cute Buttons */
+
+.button{
+
+box-shadow:0 8px 15px rgba(231,184,76,.35);
+
+}
+
+.button:hover{
+
+transform:translateY(-4px);
+
+}
+
+/* Navigation */
+
+nav a{
+
+box-shadow:0 5px 10px rgba(0,0,0,.05);
+
+}
+
+nav a:hover{
+
+transform:translateY(-3px);
+
+}
+
+/* Logo */
+
+.logo-box{
+
+background:linear-gradient(
+
+135deg,
+
+#ffcc4d,
+
+#e7b84c
+
+);
+
+}
+
+/* Section Titles */
+
+.section-title{
+
+position:relative;
+
+display:inline-block;
+
+left:50%;
+
+transform:translateX(-50%);
+
+padding:8px 30px;
+
+background:#eef5e5;
+
+border-radius:999px;
+
+border:3px dashed #98b27b;
+
+margin-bottom:40px;
+
+}
+
+.section-title::before{
+
+content:"🌼";
+
+position:absolute;
+
+left:-28px;
+
+top:3px;
+
+font-size:28px;
+
+}
+
+.section-title::after{
+
+content:"🍃";
+
+position:absolute;
+
+right:-28px;
+
+top:3px;
+
+font-size:28px;
+
+}
+
+/* Quote */
+
+.quote{
+
+position:relative;
+
+}
+
+.quote::before{
+
+content:"❝";
+
+position:absolute;
+
+left:30px;
+
+top:20px;
+
+font-size:80px;
+
+opacity:.15;
+
+}
+
+.quote::after{
+
+content:"❞";
+
+position:absolute;
+
+right:30px;
+
+bottom:10px;
+
+font-size:80px;
+
+opacity:.15;
+
+}
+
+/* Footer */
+
+footer{
+
+margin-top:80px;
+
+box-shadow:0 -5px 18px rgba(0,0,0,.05);
+
+}
+
+/* Cute Scrollbar */
+
+::-webkit-scrollbar{
+
+width:12px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#98b27b;
+
+border-radius:20px;
+
+border:2px solid #eef5e5;
+
+}
+
+/* Smooth Animation */
+
+.card,
+.button,
+nav a,
+.hero-image img{
+
+transition:all .35s ease;
+
+}
+
+/* Little Leaf Decoration */
+
+.hero{
+
+position:relative;
+
+}
+
+.hero::after{
+
+content:"🌿";
+
+position:absolute;
+
+bottom:-20px;
+
+right:120px;
+
+font-size:55px;
+
+opacity:.18;
+
+}
+
+/* Cute Selection */
+
+::selection{
+
+background:#e7b84c;
+
+color:white;
+
+}
