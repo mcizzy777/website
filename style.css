@@ -1045,3 +1045,1429 @@ background:#e7b84c;
 color:white;
 
 }
+/*=========================================
+      PREMIUM SCRAPBOOK DESIGN
+=========================================*/
+
+/* Cute blobs behind sections */
+
+.hero,
+.cards,
+.facts,
+.protect,
+.quote{
+
+position:relative;
+
+}
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+width:220px;
+
+height:220px;
+
+background:#dfeccf;
+
+border-radius:50%;
+
+top:-80px;
+
+left:-100px;
+
+opacity:.35;
+
+z-index:-1;
+
+}
+
+.protect::after{
+
+content:"";
+
+position:absolute;
+
+width:250px;
+
+height:250px;
+
+background:#fff0b9;
+
+border-radius:50%;
+
+bottom:-120px;
+
+right:-100px;
+
+opacity:.35;
+
+z-index:-1;
+
+}
+
+/* Cute dotted divider */
+
+.section-title{
+
+margin-top:90px;
+
+}
+
+.section-title::before{
+
+content:"••••••••••••";
+
+position:absolute;
+
+top:-18px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+font-size:14px;
+
+letter-spacing:4px;
+
+color:#a6bc8f;
+
+}
+
+/* Polaroid Cards */
+
+.card{
+
+padding:18px;
+
+background:white;
+
+border:none;
+
+box-shadow:
+
+0 15px 30px rgba(0,0,0,.08);
+
+}
+
+.card img{
+
+border-radius:18px;
+
+border:8px solid white;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+/* Hover Animation */
+
+.card:hover{
+
+transform:rotate(-2deg) scale(1.03);
+
+}
+
+/* Cute Hero */
+
+.hero-text{
+
+background:#fffdf7;
+
+}
+
+.hero-text h2{
+
+text-shadow:2px 2px #fff6d9;
+
+}
+
+/* Fancy Buttons */
+
+.button{
+
+background:linear-gradient(
+
+135deg,
+
+#e7b84c,
+
+#f7cf69
+
+);
+
+}
+
+.button:hover{
+
+background:linear-gradient(
+
+135deg,
+
+#95b874,
+
+#6f9457
+
+);
+
+color:white;
+
+}
+
+/* Cute Inputs */
+
+.contact-form input,
+.contact-form textarea{
+
+border:2px dashed #c6d8b7;
+
+transition:.3s;
+
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+
+border-color:#e7b84c;
+
+background:#fffdf6;
+
+}
+
+/* Footer */
+
+footer{
+
+background:linear-gradient(
+
+180deg,
+
+#d9e9ca,
+
+#bfd8a9
+
+);
+
+}
+
+/* Decorative Leaves */
+
+body::before{
+
+content:"🍂";
+
+position:fixed;
+
+left:20px;
+
+bottom:20px;
+
+font-size:40px;
+
+opacity:.18;
+
+pointer-events:none;
+
+}
+
+body::after{
+
+content:"🌼";
+
+position:fixed;
+
+right:25px;
+
+top:140px;
+
+font-size:38px;
+
+opacity:.18;
+
+pointer-events:none;
+
+}
+
+/* Cute Fade Animation */
+
+.hero,
+.card,
+.fact-box,
+.protect-text,
+.quote{
+
+animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(25px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* Soft Image Shadow */
+
+.hero-image img,
+.fact-image img,
+.protect-image img{
+
+box-shadow:
+
+0 15px 35px rgba(0,0,0,.12);
+
+}
+
+/* Rounded Images */
+
+img{
+
+display:block;
+
+}
+/*=========================================
+      PREMIUM SCRAPBOOK DESIGN
+=========================================*/
+
+/* Cute blobs behind sections */
+
+.hero,
+.cards,
+.facts,
+.protect,
+.quote{
+
+position:relative;
+
+}
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+width:220px;
+
+height:220px;
+
+background:#dfeccf;
+
+border-radius:50%;
+
+top:-80px;
+
+left:-100px;
+
+opacity:.35;
+
+z-index:-1;
+
+}
+
+.protect::after{
+
+content:"";
+
+position:absolute;
+
+width:250px;
+
+height:250px;
+
+background:#fff0b9;
+
+border-radius:50%;
+
+bottom:-120px;
+
+right:-100px;
+
+opacity:.35;
+
+z-index:-1;
+
+}
+
+/* Cute dotted divider */
+
+.section-title{
+
+margin-top:90px;
+
+}
+
+.section-title::before{
+
+content:"••••••••••••";
+
+position:absolute;
+
+top:-18px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+font-size:14px;
+
+letter-spacing:4px;
+
+color:#a6bc8f;
+
+}
+
+/* Polaroid Cards */
+
+.card{
+
+padding:18px;
+
+background:white;
+
+border:none;
+
+box-shadow:
+
+0 15px 30px rgba(0,0,0,.08);
+
+}
+
+.card img{
+
+border-radius:18px;
+
+border:8px solid white;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+/* Hover Animation */
+
+.card:hover{
+
+transform:rotate(-2deg) scale(1.03);
+
+}
+
+/* Cute Hero */
+
+.hero-text{
+
+background:#fffdf7;
+
+}
+
+.hero-text h2{
+
+text-shadow:2px 2px #fff6d9;
+
+}
+
+/* Fancy Buttons */
+
+.button{
+
+background:linear-gradient(
+
+135deg,
+
+#e7b84c,
+
+#f7cf69
+
+);
+
+}
+
+.button:hover{
+
+background:linear-gradient(
+
+135deg,
+
+#95b874,
+
+#6f9457
+
+);
+
+color:white;
+
+}
+
+/* Cute Inputs */
+
+.contact-form input,
+.contact-form textarea{
+
+border:2px dashed #c6d8b7;
+
+transition:.3s;
+
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+
+border-color:#e7b84c;
+
+background:#fffdf6;
+
+}
+
+/* Footer */
+
+footer{
+
+background:linear-gradient(
+
+180deg,
+
+#d9e9ca,
+
+#bfd8a9
+
+);
+
+}
+
+/* Decorative Leaves */
+
+body::before{
+
+content:"🍂";
+
+position:fixed;
+
+left:20px;
+
+bottom:20px;
+
+font-size:40px;
+
+opacity:.18;
+
+pointer-events:none;
+
+}
+
+body::after{
+
+content:"🌼";
+
+position:fixed;
+
+right:25px;
+
+top:140px;
+
+font-size:38px;
+
+opacity:.18;
+
+pointer-events:none;
+
+}
+
+/* Cute Fade Animation */
+
+.hero,
+.card,
+.fact-box,
+.protect-text,
+.quote{
+
+animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(25px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* Soft Image Shadow */
+
+.hero-image img,
+.fact-image img,
+.protect-image img{
+
+box-shadow:
+
+0 15px 35px rgba(0,0,0,.12);
+
+}
+
+/* Rounded Images */
+
+img{
+
+display:block;
+
+}
+/*========================================
+      PART 11 - HOMEPAGE PREMIUM UPGRADE
+========================================*/
+
+/* Soft paper background */
+
+body{
+    background:#f8f7ef;
+    background-image:
+    linear-gradient(rgba(255,255,255,.35),rgba(255,255,255,.35)),
+    radial-gradient(circle at top left,#e9f3df 0%,transparent 25%),
+    radial-gradient(circle at bottom right,#fff1bf 0%,transparent 25%);
+}
+
+/* Better spacing */
+
+.hero,
+.cards,
+.facts,
+.protect,
+.quote{
+
+    margin-top:90px;
+
+}
+
+/* Floating paper behind hero */
+
+.hero{
+
+    position:relative;
+
+}
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:260px;
+
+    height:260px;
+
+    background:#dceccb;
+
+    border-radius:45% 55% 60% 40%;
+
+    top:-70px;
+
+    left:-90px;
+
+    opacity:.45;
+
+    z-index:-1;
+
+}
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:220px;
+
+    height:220px;
+
+    background:#fff0b6;
+
+    border-radius:60% 40% 50% 50%;
+
+    right:-60px;
+
+    bottom:-50px;
+
+    opacity:.40;
+
+    z-index:-1;
+
+}
+
+/* Better Hero Card */
+
+.hero-text{
+
+    padding:55px;
+
+    border-radius:45px;
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.08);
+
+}
+
+/* Headings */
+
+.hero-text h2{
+
+    font-size:65px;
+
+    line-height:1.1;
+
+}
+
+.hero-text p{
+
+    margin-top:18px;
+
+    margin-bottom:35px;
+
+}
+
+/* Cute badge */
+
+.hero-text::before{
+
+    content:"🌿 Nature Journal";
+
+    position:absolute;
+
+    top:-18px;
+
+    left:35px;
+
+    background:#f4c542;
+
+    color:white;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    font-size:14px;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
+}
+
+/* Hero image */
+
+.hero-image{
+
+    position:relative;
+
+}
+
+.hero-image img{
+
+    border:10px solid white;
+
+    border-radius:40px;
+
+}
+
+/* Fake tape */
+
+.hero-image::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:90px;
+
+    height:24px;
+
+    background:#f6e39d;
+
+    top:-12px;
+
+    left:40%;
+
+    transform:rotate(-5deg);
+
+    opacity:.85;
+
+}
+
+/* Card Improvements */
+
+.card{
+
+    overflow:hidden;
+
+}
+
+.card h3{
+
+    margin-top:22px;
+
+}
+
+/* Cards hover */
+
+.card:hover{
+
+    transform:translateY(-12px);
+
+}
+
+/* Card shadow */
+
+.card{
+
+    box-shadow:
+    0 18px 35px rgba(0,0,0,.08);
+
+}
+
+/* Section Titles */
+
+.section-title{
+
+    padding:12px 35px;
+
+    font-size:52px;
+
+}
+
+/* Facts */
+
+.fact-box{
+
+    position:relative;
+
+}
+
+.fact-box::after{
+
+    content:"🍃";
+
+    position:absolute;
+
+    bottom:20px;
+
+    right:25px;
+
+    font-size:40px;
+
+    opacity:.15;
+
+}
+
+/* Protect */
+
+.protect-text{
+
+    position:relative;
+
+}
+
+.protect-text::after{
+
+    content:"🌼";
+
+    position:absolute;
+
+    top:20px;
+
+    right:20px;
+
+    opacity:.15;
+
+    font-size:40px;
+
+}
+
+/* Quote */
+
+.quote{
+
+    padding:70px;
+
+}
+
+/* Footer */
+
+footer{
+
+    border-radius:40px 40px 0 0;
+
+}
+
+/* Smooth image zoom */
+
+.hero-image img:hover,
+.fact-image img:hover,
+.protect-image img:hover{
+
+    transform:scale(1.04);
+
+}
+/*====================================
+        PART 12 - POLAROID GALLERY
+====================================*/
+
+.gallery-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:45px;
+
+margin-top:60px;
+
+}
+
+/* Polaroid */
+
+.gallery-grid .card{
+
+background:white;
+
+padding:15px 15px 25px;
+
+border-radius:22px;
+
+box-shadow:
+
+0 20px 35px rgba(0,0,0,.10);
+
+position:relative;
+
+overflow:visible;
+
+transition:.4s;
+
+}
+
+/* Image */
+
+.gallery-grid img{
+
+width:100%;
+
+height:240px;
+
+object-fit:cover;
+
+border-radius:14px;
+
+border:7px solid white;
+
+}
+
+/* Caption */
+
+.gallery-grid h3{
+
+font-family:'Patrick Hand',cursive;
+
+font-size:34px;
+
+margin-top:18px;
+
+color:#4b6741;
+
+}
+
+.gallery-grid p{
+
+font-size:15px;
+
+margin-top:8px;
+
+color:#6a7b64;
+
+}
+
+/* Hover */
+
+.gallery-grid .card:hover{
+
+transform:
+
+rotate(-3deg)
+
+translateY(-15px)
+
+scale(1.03);
+
+}
+
+/* Tape */
+
+.gallery-grid .card::before{
+
+content:"";
+
+position:absolute;
+
+width:90px;
+
+height:20px;
+
+background:#f7e29b;
+
+top:-10px;
+
+left:50%;
+
+transform:
+
+translateX(-50%)
+
+rotate(-4deg);
+
+border-radius:4px;
+
+opacity:.9;
+
+}
+
+/* Push Pin */
+
+.gallery-grid .card::after{
+
+content:"📍";
+
+position:absolute;
+
+top:-18px;
+
+right:18px;
+
+font-size:22px;
+
+}
+
+/* Random Rotations */
+
+.gallery-grid .card:nth-child(2){
+
+transform:rotate(2deg);
+
+}
+
+.gallery-grid .card:nth-child(3){
+
+transform:rotate(-2deg);
+
+}
+
+.gallery-grid .card:nth-child(5){
+
+transform:rotate(1deg);
+
+}
+
+.gallery-grid .card:nth-child(6){
+
+transform:rotate(-3deg);
+
+}
+
+.gallery-grid .card:nth-child(8){
+
+transform:rotate(2deg);
+
+}
+
+.gallery-grid .card:hover{
+
+transform:rotate(0deg) scale(1.05);
+
+z-index:100;
+
+}
+
+/* Decorative Leaves */
+
+.gallery-grid{
+
+position:relative;
+
+}
+
+.gallery-grid::before{
+
+content:"🍃";
+
+position:absolute;
+
+left:-30px;
+
+top:-20px;
+
+font-size:55px;
+
+opacity:.15;
+
+}
+
+.gallery-grid::after{
+
+content:"🌼";
+
+position:absolute;
+
+right:-20px;
+
+bottom:-20px;
+
+font-size:50px;
+
+opacity:.15;
+
+}
+
+/* Cute Shadows */
+
+.gallery-grid .card{
+
+border:2px solid #f5f1df;
+
+}
+
+/* Smooth */
+
+.gallery-grid .card img{
+
+transition:.35s;
+
+}
+
+.gallery-grid .card:hover img{
+
+transform:scale(1.05);
+
+}
+/*=========================================
+        PART 13 - FINAL AESTHETIC POLISH
+=========================================*/
+
+/* ---------- Soft Nature Theme ---------- */
+
+:root{
+
+    --cream:#FAF7EF;
+    --sage:#DDECCF;
+    --leaf:#7FA36B;
+    --forest:#4C6944;
+    --yellow:#F4C542;
+    --paper:#FFFDF8;
+
+}
+
+/* Floating Decorations */
+
+body{
+
+    position:relative;
+
+    overflow-x:hidden;
+
+}
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    width:280px;
+
+    height:280px;
+
+    background:rgba(221,236,207,.45);
+
+    border-radius:50%;
+
+    top:-120px;
+
+    right:-120px;
+
+    z-index:-2;
+
+}
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    width:230px;
+
+    height:230px;
+
+    background:rgba(244,197,66,.18);
+
+    border-radius:50%;
+
+    bottom:-100px;
+
+    left:-80px;
+
+    z-index:-2;
+
+}
+
+/* Hero */
+
+.hero{
+
+    padding:35px 0;
+
+}
+
+.hero-text{
+
+    background:var(--paper);
+
+    border:3px dashed #b8cfa7;
+
+    position:relative;
+
+}
+
+.hero-text::after{
+
+    content:"Nature Explorer";
+
+    position:absolute;
+
+    right:25px;
+
+    bottom:-18px;
+
+    background:var(--yellow);
+
+    color:white;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+}
+
+/* Better Cards */
+
+.card{
+
+    background:var(--paper);
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+}
+
+.card img{
+
+    border-bottom:5px solid #f4c542;
+
+}
+
+.card p{
+
+    padding-bottom:10px;
+
+}
+
+/* Hover */
+
+.card:hover{
+
+    transform:translateY(-12px);
+
+}
+
+/* Section Titles */
+
+.section-title{
+
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+}
+
+/* Nature Facts */
+
+.fact-box{
+
+    background:#F5FAF0;
+
+}
+
+.fact-box ul li{
+
+    padding:8px 0;
+
+    border-bottom:1px dashed #d8e5cb;
+
+}
+
+.fact-box ul li:last-child{
+
+    border:none;
+
+}
+
+/* Buttons */
+
+.button{
+
+    letter-spacing:.5px;
+
+    box-shadow:0 8px 18px rgba(244,197,66,.35);
+
+}
+
+.button:hover{
+
+    box-shadow:0 12px 22px rgba(127,163,107,.35);
+
+}
+
+/* Navigation */
+
+nav a{
+
+    font-size:15px;
+
+    border-radius:999px;
+
+}
+
+nav a:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/* Images */
+
+.hero-image img,
+.fact-image img,
+.protect-image img{
+
+    transition:.45s;
+
+}
+
+.hero-image img:hover,
+.fact-image img:hover,
+.protect-image img:hover{
+
+    transform:scale(1.03);
+
+}
+
+/* Quote */
+
+.quote{
+
+    background:linear-gradient(135deg,#EAF5DD,#FFF7D3);
+
+}
+
+/* Footer */
+
+footer{
+
+    border-top:5px solid var(--yellow);
+
+}
+
+/* Small Fade Animation */
+
+@keyframes floatUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.hero,
+.card,
+.fact-box,
+.protect-text,
+.quote{
+
+    animation:floatUp .7s ease;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.hero{
+
+    gap:30px;
+
+}
+
+.hero-text h2{
+
+    font-size:42px;
+
+}
+
+.section-title{
+
+    font-size:38px;
+
+}
+
+}
