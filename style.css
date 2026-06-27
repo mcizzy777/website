@@ -1,27 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Playfair+Display:wght@500;700&display=swap');
 
 body {
   margin: 0;
-  font-family: "Poppins", sans-serif;
-  background: linear-gradient(180deg, #0b1b1f, #102a2f, #0b1b1f);
+  font-family: "Quicksand", sans-serif;
+  background: linear-gradient(180deg, #1b2a2f, #0f1c20);
   color: #f5f5f5;
 }
+
 /* HEADER */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 35px;
-  background: rgba(0,0,0,0.7);
-  backdrop-filter: blur(8px);
+  padding: 18px 30px;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
   position: sticky;
   top: 0;
-  z-index: 1000;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 .logo {
-  font-size: 18px;
   font-weight: 700;
   color: #ffd166;
   letter-spacing: 1px;
@@ -29,16 +27,13 @@ header {
 
 /* NAV */
 nav a {
-  margin-left: 18px;
+  margin-left: 15px;
   text-decoration: none;
-  color: #e0e0e0;
-  font-weight: 500;
-  transition: 0.3s;
+  color: #eaeaea;
 }
 
 nav a:hover {
   color: #ffd166;
-  transform: translateY(-2px);
 }
 
 /* HERO */
@@ -46,8 +41,8 @@ nav a:hover {
   height: 90vh;
   background: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee") center/cover;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-align: center;
   position: relative;
 }
@@ -55,126 +50,84 @@ nav a:hover {
 .hero::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background: rgba(0,0,0,0.45);
 }
 
 .hero-content {
   position: relative;
   max-width: 700px;
-  padding: 20px;
 }
 
 .hero h1 {
   font-family: "Playfair Display", serif;
   font-size: 48px;
   margin: 0;
-  color: #ffffff;
 }
 
 .tagline {
   color: #ffd166;
   font-style: italic;
-  margin-top: 10px;
 }
 
-/* BUTTONS */
+/* BUTTON */
 .btn {
   display: inline-block;
   margin-top: 15px;
-  padding: 12px 22px;
+  padding: 10px 20px;
   background: #ffd166;
   color: #000;
+  border-radius: 25px;
   text-decoration: none;
   font-weight: 600;
-  border-radius: 25px;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background: #ffb703;
-  transform: scale(1.05);
 }
 
 /* SECTIONS */
-.welcome, .about-preview, .content {
+section {
   padding: 60px 25px;
   text-align: center;
-}
-
-h2 {
-  font-family: "Playfair Display", serif;
-  color: #ffd166;
 }
 
 /* CARDS */
 .cards {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  padding: 40px;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.06);
   padding: 20px;
   width: 240px;
   border-radius: 15px;
-  transition: 0.3s;
-  backdrop-filter: blur(6px);
-}
-
-.card:hover {
-  transform: translateY(-8px);
-  border-color: #ffd166;
+  border: 1px solid rgba(255,255,255,0.1);
 }
 
 /* PAGE TITLE */
-.page-title {
-  text-align: center;
-  padding: 60px 20px 20px;
-}
-
 .page-title h1 {
   font-family: "Playfair Display", serif;
-  font-size: 40px;
   color: #ffd166;
 }
 
 /* GALLERY */
-.gallery-grid {
+.gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 15px;
-  padding: 40px;
+  gap: 12px;
+  padding: 30px;
 }
 
 .photo {
   height: 180px;
+  background: #333;
   border-radius: 12px;
-  background-size: cover;
-  background-position: center;
-  transition: 0.3s;
-  filter: brightness(0.9);
-}
-
-.photo:hover {
-  transform: scale(1.05);
-  filter: brightness(1.1);
 }
 
 /* FOOTER */
 footer {
+  padding: 20px;
   text-align: center;
-  padding: 25px;
-  background: rgba(0,0,0,0.8);
-  margin-top: 40px;
-  color: #aaa;
+  background: rgba(0,0,0,0.6);
 }
-
     
