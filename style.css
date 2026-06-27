@@ -2471,3 +2471,295 @@ footer{
 }
 
 }
+/*==========================================
+        PART 14 - FINAL PREMIUM POLISH
+===========================================*/
+
+/* Smooth page fade */
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+animation:fadePage .8s ease;
+
+}
+
+@keyframes fadePage{
+
+from{
+
+opacity:0;
+
+}
+
+to{
+
+opacity:1;
+
+}
+
+}
+
+/* Better spacing */
+
+section{
+
+padding-top:20px;
+
+padding-bottom:20px;
+
+}
+
+/* Better cards */
+
+.card{
+
+cursor:pointer;
+
+border:2px solid rgba(255,255,255,.7);
+
+}
+
+.card:hover{
+
+box-shadow:
+
+0 30px 45px rgba(0,0,0,.12);
+
+}
+
+/* Hero */
+
+.hero-text{
+
+box-shadow:
+
+0 20px 50px rgba(0,0,0,.10);
+
+}
+
+/* Cute highlight */
+
+h2 span{
+
+background:#f4c542;
+
+padding:2px 12px;
+
+border-radius:20px;
+
+color:white;
+
+}
+
+/* Better paragraphs */
+
+p{
+
+line-height:1.9;
+
+}
+
+/* Navigation */
+
+nav{
+
+gap:18px;
+
+}
+
+nav a{
+
+font-weight:700;
+
+}
+
+nav a:hover{
+
+letter-spacing:.5px;
+
+}
+
+/* Image Hover */
+
+img{
+
+transition:.45s;
+
+}
+
+img:hover{
+
+filter:brightness(1.03);
+
+}
+
+/* Footer */
+
+footer{
+
+padding:45px;
+
+}
+
+.footer-links{
+
+gap:20px;
+
+}
+
+.footer-links a{
+
+position:relative;
+
+}
+
+.footer-links a::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+bottom:-5px;
+
+width:0;
+
+height:2px;
+
+background:#f4c542;
+
+transition:.35s;
+
+}
+
+.footer-links a:hover::after{
+
+width:100%;
+
+}
+
+/* Fancy Scrollbar */
+
+::-webkit-scrollbar{
+
+width:12px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:linear-gradient(
+
+180deg,
+
+#8dad71,
+
+#f4c542
+
+);
+
+border-radius:30px;
+
+}
+
+/* Better Button */
+
+.button{
+
+font-size:17px;
+
+padding:16px 36px;
+
+}
+
+.button:hover{
+
+transform:
+
+translateY(-4px)
+
+scale(1.03);
+
+}
+
+/* Better Section Animation */
+
+.card,
+.hero-text,
+.fact-box,
+.protect-text,
+.quote,
+footer{
+
+animation:appear .8s ease;
+
+}
+
+@keyframes appear{
+
+0%{
+
+opacity:0;
+
+transform:translateY(25px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* Decorative Divider */
+
+.section-title::after{
+
+content:"❀ ❀ ❀";
+
+display:block;
+
+font-size:18px;
+
+margin-top:8px;
+
+color:#d9b248;
+
+letter-spacing:8px;
+
+}
+
+/* Rounded Inputs */
+
+input,
+textarea{
+
+transition:.3s;
+
+}
+
+input:focus,
+textarea:focus{
+
+transform:scale(1.02);
+
+}
+
+/* Hero Image */
+
+.hero-image{
+
+filter:drop-shadow(0 15px 25px rgba(0,0,0,.12));
+
+}
