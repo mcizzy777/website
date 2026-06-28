@@ -273,10 +273,15 @@ HERO
 
 .hero-image img{
 
-    border-radius:30px;
+    width:100%;
 
-    box-shadow:0 20px 60px rgba(0,0,0,.4);
+    height:500px;
 
+    object-fit:cover;
+
+    border-radius:20px;
+
+}
 }
 
 
