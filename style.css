@@ -1,7 +1,3 @@
-/*==========================================
-GOOGLE FONT
-==========================================*/
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 
@@ -794,71 +790,6 @@ ABOUT PAGE
 
 }
 
-
-/*==========================================
-TIMELINE
-==========================================*/
-
-.timeline-container{
-
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:30px;
-
-}
-
-.timeline-box{
-
-    padding:35px;
-
-    text-align:center;
-
-}
-
-.timeline-box h3{
-
-    font-size:34px;
-
-    color:#ffd400;
-
-    margin-bottom:15px;
-
-}
-
-
-/*==========================================
-VALUES
-==========================================*/
-
-.values-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(4,1fr);
-
-    gap:25px;
-
-}
-
-.values-grid .glass-card{
-
-    padding:35px;
-
-    text-align:center;
-
-}
-
-.values-grid h3{
-
-    color:#ffd400;
-
-    margin-bottom:15px;
-
-}
-
-
 /*==========================================
 DISCOVER FEATURE
 ==========================================*/
@@ -1166,9 +1097,6 @@ CONTACT
     cursor:pointer;
 }
 
-.map-placeholder img{
-    border-radius:25px;
-}
 
 
 /*==========================================
@@ -1181,8 +1109,7 @@ HOVER EFFECTS
 .animal-card,
 .gallery-item,
 .glass-card,
-.timeline-box{
-    transition:.35s ease;
+
 }
 
 .feature-card:hover,
@@ -1191,7 +1118,7 @@ HOVER EFFECTS
 .animal-card:hover,
 .gallery-item:hover,
 .glass-card:hover,
-.timeline-box:hover{
+{
 
     transform:translateY(-10px);
 
@@ -1215,9 +1142,7 @@ RESPONSIVE
 .destination-grid,
 .animals-grid,
 .gallery-grid,
-.values-grid,
 .facts-grid,
-.timeline-container,
 .stories-grid,
 .mission-container{
 
@@ -1250,9 +1175,7 @@ grid-template-columns:1fr;
 .destination-grid,
 .animals-grid,
 .gallery-grid,
-.values-grid,
 .facts-grid,
-.timeline-container,
 .stories-grid,
 .mission-container{
 
