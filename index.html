@@ -1,273 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>NatureQuest</title>
-
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+    <title>National Geographic | Explore the World</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="container">
+    <!-- ================= HEADER ================= -->
 
-<!-- ================= HEADER ================= -->
+    <header id="home">
 
-<header>
+        <nav class="navbar">
 
-<div class="logo">
+            <div class="logo">
+                <img src="img/logo.png" alt="National Geographic Logo">
+            </div>
 
-<div class="logo-box"></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#discover">Discover</a></li>
+                <li><a href="#wildlife">Wildlife</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-<div>
+        </nav>
 
-<h1>NatureQuest</h1>
+        <div class="hero">
 
-<p>Explore • Learn • Protect</p>
+            <div class="hero-text">
 
-</div>
+                <h1>Explore Our Amazing Planet</h1>
 
-</div>
+                <p>
+                    Journey through breathtaking landscapes, incredible wildlife,
+                    and inspiring stories that reveal the beauty of Earth.
+                </p>
 
-<nav>
+                <a href="#discover" class="btn">
+                    Explore Now
+                </a>
 
-<a href="index.html" class="active">Home</a>
+            </div>
 
-<a href="wildlife.html">Wildlife</a>
+            <div class="hero-image">
 
-<a href="gallery.html">Gallery</a>
+                <img src="img/hero.jpg" alt="Hero Image">
 
-<a href="blog.html">Blog</a>
+            </div>
 
-<a href="about.html">About</a>
+        </div>
 
-<a href="contact.html">Contact</a>
+    </header>
 
-</nav>
+    <!-- ================= ABOUT ================= -->
 
-</header>
+    <section id="about" class="about">
 
-<!-- ================= HERO ================= -->
+        <h2>About National Geographic</h2>
 
-<section class="hero">
+        <div class="about-container">
 
-<div class="hero-text">
+            <div class="card">
+                <h3>History</h3>
+                <p>
+                    Since its founding, National Geographic has inspired millions
+                    through exploration, education, and storytelling.
+                </p>
+            </div>
 
-<h2>Welcome to <span>NatureQuest!</span></h2>
+            <div class="card">
+                <h3>Mission</h3>
+                <p>
+                    To inspire people to care about the planet by sharing
+                    extraordinary stories of nature, science, and culture.
+                </p>
+            </div>
 
-<p>
+            <div class="card">
+                <h3>Vision</h3>
+                <p>
+                    A future where people and nature thrive together through
+                    conservation and education.
+                </p>
+            </div>
 
-Discover amazing wildlife, beautiful forests,
+            <div class="card">
+                <h3>Conservation</h3>
+                <p>
+                    Supporting global efforts to protect wildlife, oceans,
+                    forests, and endangered ecosystems.
+                </p>
+            </div>
 
-colorful oceans, and learn how together
+        </div>
 
-we can protect our planet.
+    </section>
 
-</p>
+    <!-- ================= DISCOVER ================= -->
 
-<a href="wildlife.html" class="button">
+    <section id="discover" class="discover">
 
-Explore Wildlife
+        <h2>Latest Discoveries</h2>
 
-</a>
+        <div class="discover-container">
 
-</div>
+            <div class="discover-card">
+                <img src="img/discover1.jpg" alt="">
+                <h3>Ocean Exploration</h3>
+                <p>Discover the mysteries hidden beneath the sea.</p>
+            </div>
 
-<div class="hero-image">
+            <div class="discover-card">
+                <img src="img/discover2.jpg" alt="">
+                <h3>Wildlife Stories</h3>
+                <p>Meet incredible animals from every corner of Earth.</p>
+            </div>
 
-<img src="images/hero.jpg" alt="Nature">
+            <div class="discover-card">
+                <img src="img/discover3.jpg" alt="">
+                <h3>Nature Photography</h3>
+                <p>Experience stunning photographs captured by explorers.</p>
+            </div>
 
-</div>
+        </div>
 
-</section>
+    </section>
 
-<!-- ================= FEATURED ================= -->
+    <!-- ================= WILDLIFE ================= -->
 
-<section class="cards">
+    <section id="wildlife" class="wildlife">
 
-<div class="section-title">
+        <h2>Wildlife & Ecosystems</h2>
 
-Featured Wildlife
+        <div class="wildlife-grid">
 
-</div>
+            <div class="animal-card">
+                <img src="img/lion.jpg" alt="">
+                <h3>Mammals</h3>
+            </div>
 
-<div class="card-grid">
+            <div class="animal-card">
+                <img src="img/birds.jpg" alt="">
+                <h3>Birds</h3>
+            </div>
 
-<div class="card">
+            <div class="animal-card">
+                <img src="img/ocean.jpg" alt="">
+                <h3>Marine Life</h3>
+            </div>
 
-<img src="images/lion.jpg">
+            <div class="animal-card">
+                <img src="img/reptile.jpg" alt="">
+                <h3>Reptiles</h3>
+            </div>
 
-<h3>Lion</h3>
+            <div class="animal-card">
+                <img src="img/forest.jpg" alt="">
+                <h3>Rainforests</h3>
+            </div>
 
-<p>
+            <div class="animal-card">
+                <img src="img/arctic.jpg" alt="">
+                <h3>Arctic</h3>
+            </div>
 
-Known as the king of the jungle,
+        </div>
 
-lions live in groups called prides.
+    </section>
 
-</p>
+    <!-- ================= GALLERY ================= -->
 
-</div>
+    <section id="gallery" class="gallery">
 
-<div class="card">
+        <h2>Photo Gallery</h2>
 
-<img src="images/turtle.jpg">
+        <div class="gallery-grid">
 
-<h3>Sea Turtle</h3>
+            <img src="img/gallery1.jpg" alt="">
+            <img src="img/gallery2.jpg" alt="">
+            <img src="img/gallery3.jpg" alt="">
+            <img src="img/gallery4.jpg" alt="">
+            <img src="img/gallery5.jpg" alt="">
+            <img src="img/gallery6.jpg" alt="">
+            <img src="img/gallery7.jpg" alt="">
+            <img src="img/gallery8.jpg" alt="">
 
-<p>
+        </div>
 
-Sea turtles travel thousands
+    </section>
 
-of kilometers during migration.
+    <!-- ================= CONTACT ================= -->
 
-</p>
+    <section id="contact" class="contact">
 
-</div>
+        <h2>Contact Us</h2>
 
-<div class="card">
+        <div class="contact-container">
 
-<img src="images/eagle.jpg">
+            <div class="contact-info">
 
-<h3>Eagle</h3>
+                <h3>Headquarters</h3>
 
-<p>
+                <p>Washington, D.C.</p>
 
-Eagles have excellent eyesight
+                <p>Email: info@example.com</p>
 
-that helps them hunt from high above.
+                <p>Phone: +1 234 567 890</p>
 
-</p>
+            </div>
 
-</div>
+            <form>
 
-</div>
+                <input type="text" placeholder="Your Name">
 
-</section>
+                <input type="email" placeholder="Your Email">
 
-<!-- ================= FACTS ================= -->
+                <textarea placeholder="Your Message"></textarea>
 
-<section class="facts">
+                <button type="submit">
+                    Send Message
+                </button>
 
-<div class="fact-box">
+            </form>
 
-<h2>Nature Facts</h2>
+        </div>
 
-<ul>
+    </section>
 
-<li>🌳 Trees absorb carbon dioxide.</li>
+    <!-- ================= FOOTER ================= -->
 
-<li>🐝 Bees pollinate many crops.</li>
+    <footer>
 
-<li>🐬 Oceans produce over half of Earth's oxygen.</li>
+        <p>
+            © 2026 National Geographic Inspired Website |
+            School Project
+        </p>
 
-<li>🦋 Butterflies help pollinate flowers.</li>
-
-</ul>
-
-</div>
-
-<div class="fact-image">
-
-<img src="images/forest.jpg">
-
-</div>
-
-</section>
-
-<!-- ================= SAVE NATURE ================= -->
-
-<section class="protect">
-
-<div class="protect-image">
-
-<img src="images/plant.jpg">
-
-</div>
-
-<div class="protect-text">
-
-<h2>Protect Nature</h2>
-
-<p>
-
-Every small action counts.
-
-Reduce waste, recycle,
-
-plant trees, and protect
-
-wildlife habitats for future generations.
-
-</p>
-
-<a href="about.html" class="button">
-
-Learn More
-
-</a>
-
-</div>
-
-</section>
-
-<!-- ================= QUOTE ================= -->
-
-<section class="quote">
-
-<h2>
-
-"The Earth is what we all have in common."
-
-</h2>
-
-<p>
-
-Let's keep it healthy and beautiful.
-
-</p>
-
-</section>
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-<div class="footer-left">
-
-<h3>NatureQuest</h3>
-
-<p>
-
-Explore • Learn • Protect
-
-</p>
-
-</div>
-
-<div class="footer-links">
-
-<a href="index.html">Home</a>
-
-<a href="wildlife.html">Wildlife</a>
-
-<a href="gallery.html">Gallery</a>
-
-<a href="blog.html">Blog</a>
-
-</div>
-
-</footer>
-
-</div>
+    </footer>
 
 </body>
-
 </html>
