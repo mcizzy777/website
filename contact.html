@@ -1,341 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Contact | NatureQuest</title>
-
-<link rel="stylesheet" href="css/style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-
-/* CONTACT PAGE */
-
-.contact-container{
-
-display:grid;
-
-grid-template-columns:1fr 1fr;
-
-gap:40px;
-
-margin:60px 0;
-
-}
-
-.contact-info{
-
-background:#eef5e5;
-
-padding:40px;
-
-border-radius:35px;
-
-border:4px dashed #9ab97f;
-
-}
-
-.contact-info h2{
-
-font-family:'Patrick Hand',cursive;
-
-font-size:45px;
-
-margin-bottom:20px;
-
-color:#4d6943;
-
-}
-
-.contact-info p{
-
-line-height:1.8;
-
-margin-bottom:18px;
-
-color:#5e7157;
-
-}
-
-.contact-form{
-
-background:#fffef8;
-
-padding:40px;
-
-border-radius:35px;
-
-border:4px dashed #b7cda3;
-
-}
-
-.contact-form h2{
-
-font-family:'Patrick Hand',cursive;
-
-font-size:45px;
-
-margin-bottom:25px;
-
-color:#4d6943;
-
-}
-
-.contact-form input,
-.contact-form textarea{
-
-width:100%;
-
-padding:15px;
-
-margin-bottom:20px;
-
-border:none;
-
-outline:none;
-
-border-radius:20px;
-
-background:#f7f7f0;
-
-font-family:Poppins;
-
-font-size:16px;
-
-}
-
-.contact-form textarea{
-
-height:180px;
-
-resize:none;
-
-}
-
-.contact-form button{
-
-background:#e7b84c;
-
-color:white;
-
-border:none;
-
-padding:15px 35px;
-
-border-radius:999px;
-
-font-size:17px;
-
-font-weight:bold;
-
-cursor:pointer;
-
-transition:.3s;
-
-}
-
-.contact-form button:hover{
-
-background:#98b27b;
-
-}
-
-@media(max-width:900px){
-
-.contact-container{
-
-grid-template-columns:1fr;
-
-}
-
-}
-
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic | Explore the World</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="container">
+    <!-- ================= HEADER ================= -->
 
-<!-- HEADER -->
+    <header id="home">
 
-<header>
+        <nav class="navbar">
 
-<div class="logo">
+            <div class="logo">
+                <img src="img/logo.png" alt="National Geographic Logo">
+            </div>
 
-<div class="logo-box"></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#discover">Discover</a></li>
+                <li><a href="#wildlife">Wildlife</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-<div>
+        </nav>
 
-<h1>NatureQuest</h1>
+        <div class="hero">
 
-<p>Explore • Learn • Protect</p>
+            <div class="hero-text">
 
-</div>
+                <h1>Explore Our Amazing Planet</h1>
 
-</div>
+                <p>
+                    Journey through breathtaking landscapes, incredible wildlife,
+                    and inspiring stories that reveal the beauty of Earth.
+                </p>
 
-<nav>
+                <a href="#discover" class="btn">
+                    Explore Now
+                </a>
 
-<a href="index.html">Home</a>
-<a href="wildlife.html">Wildlife</a>
-<a href="gallery.html">Gallery</a>
-<a href="blog.html">Blog</a>
-<a href="about.html">About</a>
-<a href="contact.html" class="active">Contact</a>
+            </div>
 
-</nav>
+            <div class="hero-image">
 
-</header>
+                <img src="img/hero.jpg" alt="Hero Image">
 
-<!-- HERO -->
+            </div>
 
-<section class="hero">
+        </div>
 
-<div class="hero-text">
+    </header>
 
-<h2>Get In Touch</h2>
+    <!-- ================= ABOUT ================= -->
 
-<p>
+    <section id="about" class="about">
 
-Have questions or suggestions?
+        <h2>About National Geographic</h2>
 
-We'd love to hear from you!
+        <div class="about-container">
 
-Let's work together to protect wildlife
+            <div class="card">
+                <h3>History</h3>
+                <p>
+                    Since its founding, National Geographic has inspired millions
+                    through exploration, education, and storytelling.
+                </p>
+            </div>
 
-and our beautiful planet.
+            <div class="card">
+                <h3>Mission</h3>
+                <p>
+                    To inspire people to care about the planet by sharing
+                    extraordinary stories of nature, science, and culture.
+                </p>
+            </div>
 
-</p>
+            <div class="card">
+                <h3>Vision</h3>
+                <p>
+                    A future where people and nature thrive together through
+                    conservation and education.
+                </p>
+            </div>
 
-</div>
+            <div class="card">
+                <h3>Conservation</h3>
+                <p>
+                    Supporting global efforts to protect wildlife, oceans,
+                    forests, and endangered ecosystems.
+                </p>
+            </div>
 
-<div class="hero-image">
+        </div>
 
-<img src="images/contact-banner.jpg" alt="Contact">
+    </section>
 
-</div>
+    <!-- ================= DISCOVER ================= -->
+
+    <section id="discover" class="discover">
+
+        <h2>Latest Discoveries</h2>
+
+        <div class="discover-container">
+
+            <div class="discover-card">
+                <img src="img/discover1.jpg" alt="">
+                <h3>Ocean Exploration</h3>
+                <p>Discover the mysteries hidden beneath the sea.</p>
+            </div>
+
+            <div class="discover-card">
+                <img src="img/discover2.jpg" alt="">
+                <h3>Wildlife Stories</h3>
+                <p>Meet incredible animals from every corner of Earth.</p>
+            </div>
+
+            <div class="discover-card">
+                <img src="img/discover3.jpg" alt="">
+                <h3>Nature Photography</h3>
+                <p>Experience stunning photographs captured by explorers.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= WILDLIFE ================= -->
+
+    <section id="wildlife" class="wildlife">
+
+        <h2>Wildlife & Ecosystems</h2>
+
+        <div class="wildlife-grid">
+
+            <div class="animal-card">
+                <img src="img/lion.jpg" alt="">
+                <h3>Mammals</h3>
+            </div>
+
+            <div class="animal-card">
+                <img src="img/birds.jpg" alt="">
+                <h3>Birds</h3>
+            </div>
+
+            <div class="animal-card">
+                <img src="img/ocean.jpg" alt="">
+                <h3>Marine Life</h3>
+            </div>
+
+            <div class="animal-card">
+                <img src="img/reptile.jpg" alt="">
+                <h3>Reptiles</h3>
+            </div>
+
+            <div class="animal-card">
+                <img src="img/forest.jpg" alt="">
+                <h3>Rainforests</h3>
+            </div>
+
+            <div class="animal-card">
+                <img src="img/arctic.jpg" alt="">
+                <h3>Arctic</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= GALLERY ================= -->
+
+    <section id="gallery" class="gallery">
+
+        <h2>Photo Gallery</h2>
+
+        <div class="gallery-grid">
+
+            <img src="img/gallery1.jpg" alt="">
+            <img src="img/gallery2.jpg" alt="">
+            <img src="img/gallery3.jpg" alt="">
+            <img src="img/gallery4.jpg" alt="">
+            <img src="img/gallery5.jpg" alt="">
+            <img src="img/gallery6.jpg" alt="">
+            <img src="img/gallery7.jpg" alt="">
+            <img src="img/gallery8.jpg" alt="">
+
+        </div>
+
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="contact">
+
+        <h2>Contact Us</h2>
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+
+                <h3>Headquarters</h3>
+
+                <p>Washington, D.C.</p>
+
+                <p>Email: info@example.com</p>
+
+                <p>Phone: +1 234 567 890</p>
+
+            </div>
+
+            <form>
+
+                <input type="text" placeholder="Your Name">
+
+                <input type="email" placeholder="Your Email">
+
+                <textarea placeholder="Your Message"></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+  <!--================ STATISTICS ================-->
+
+<section class="stats">
+
+    <h2>Our Impact</h2>
+
+    <div class="stats-container">
+
+        <div class="stat-card">
+            <h3>130+</h3>
+            <p>Years of Exploration</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>170+</h3>
+            <p>Countries Reached</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>8,000+</h3>
+            <p>Scientific Projects</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>1M+</h3>
+            <p>Wildlife Photos</p>
+        </div>
+
+    </div>
 
 </section>
 
-<!-- CONTACT -->
+    <!-- ================= FOOTER ================= -->
 
-<div class="contact-container">
+    <footer>
 
-<div class="contact-info">
+        <p>
+            © 2026 National Geographic Inspired Website |
+            School Project
+        </p>
 
-<h2>Contact Information</h2>
-
-<p>📍 Philippines</p>
-
-<p>📧 naturequest@email.com</p>
-
-<p>📞 +63 912 345 6789</p>
-
-<p>
-
-🌿 Follow NatureQuest for more wildlife,
-
-nature photography, and conservation tips.
-
-</p>
-
-<br>
-
-<h2>Office Hours</h2>
-
-<p>Monday - Friday</p>
-
-<p>8:00 AM - 5:00 PM</p>
-
-</div>
-
-<div class="contact-form">
-
-<h2>Send a Message</h2>
-
-<form>
-
-<input type="text" placeholder="Your Name">
-
-<input type="email" placeholder="Your Email">
-
-<input type="text" placeholder="Subject">
-
-<textarea placeholder="Write your message..."></textarea>
-
-<button type="submit">
-
-Send Message
-
-</button>
-
-</form>
-
-</div>
-
-</div>
-
-<!-- QUOTE -->
-
-<section class="quote">
-
-<h2>
-
-🌎 Together We Can Protect Nature
-
-</h2>
-
-<p>
-
-Every voice matters.
-
-Every action counts.
-
-Let's build a greener future together.
-
-</p>
-
-</section>
-
-<!-- FOOTER -->
-
-<footer>
-
-<div class="footer-left">
-
-<h3>NatureQuest</h3>
-
-<p>
-
-Explore • Learn • Protect
-
-</p>
-
-</div>
-
-<div class="footer-links">
-
-<a href="index.html">Home</a>
-
-<a href="wildlife.html">Wildlife</a>
-
-<a href="gallery.html">Gallery</a>
-
-<a href="blog.html">Blog</a>
-
-</div>
-
-</footer>
-
-</div>
+    </footer>
 
 </body>
-
 </html>
