@@ -1274,3 +1274,19 @@ PHOTO SHOWCASE
     transform:scale(1.1);
 
 }
+.explore-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border: 2px solid #ffcc00; /* Yellow border */
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.explore-btn:hover {
+    background: #ffcc00;
+    color: black;
+}
