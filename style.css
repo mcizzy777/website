@@ -1308,3 +1308,20 @@ PHOTO SHOWCASE
     background: transparent;
     color: #FFD700;
 }
+.btn {
+    display: inline-block;
+    background: transparent;
+    color: #FFD700;
+    border: 2px solid #FFD700;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #FFD700;
+    color: #000;
+}
