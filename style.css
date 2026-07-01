@@ -1290,3 +1290,21 @@ PHOTO SHOWCASE
     background: #ffcc00;
     color: black;
 }
+.learn-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #FFD700;
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid #FFD700;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.learn-btn:hover {
+    background: transparent;
+    color: #FFD700;
+}
